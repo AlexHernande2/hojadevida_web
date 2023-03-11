@@ -19,6 +19,7 @@
     grid-area: header;
     background-color: #5a5a5a;
     text-align: center;
+    font-family: 'Caveat', cursive;
     
 }
 .hojadeVida aside{
@@ -47,8 +48,10 @@
 .hojadeVida section.competencias_dat{
     grid-area: competencias_dat;
     background-color: #0fec9021;
+    
 }
 .hojadeVida footer{
+    font-family: 'Caveat', cursive;
     text-align: center;
     grid-area: footer;
     background-color: #ededed;
