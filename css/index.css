@@ -1,44 +1,55 @@
+*{
+    margin :0px;
+    padding: 0px;
+
+}
 .hojadeVida{
+    width: 100%;
+    height: 100vh; /*vh alto de la pantalla*/
     display: grid;
-    grid-template-areas: "header header header header " 
-    "aside main main section"
-    "aside education_dat education_dat education_dat "
-    "experiencia_dat experiencia_dat competencias_dat competencias_dat" 
-    "footer footer footer footer";
+    grid-template-areas: "header header header " 
+    "aside main  section"
+    "education_dat  education_dat education_dat "
+    "experiencia_dat  competencias_dat competencias_dat" 
+    "footer footer footer";
+    grid-gap:0px ;
+   
 }
 .hojadeVida header{
     grid-area: header;
-    background-color: #565656;
+    background-color: #5a5a5a;
     text-align: center;
     
 }
 .hojadeVida aside{
-    grid-area: aside;
-    position: auto;
+    display: grid;
+    justify-content: center;
     
-   
 }
+
+
 .hojadeVida main{
     grid-area: main;
-    background-color: #b86800;
+    background-color: #dfdfdf;
 }
 .hojadeVida section{
     grid-area: section ;
-    background-color: #749ef3;
+    background-color: #f8faff;
 }
 .hojadeVida section.educacion_dat{
     grid-area: education_dat;
-    background-color: #8f821e;
+    background-color: #f0ece9;
 }
 .hojadeVida section.experiencia_dat{
     grid-area: experiencia_dat;
-    background-color: #6beaea;
+    background-color: #d1eded;
 }
 .hojadeVida section.competencias_dat{
     grid-area: competencias_dat;
-    background-color: #f9d0ff;
+    background-color: #0fec9021;
 }
 .hojadeVida footer{
+    text-align: center;
     grid-area: footer;
-    background-color: chocolate;
+    background-color: #ededed;
 }
